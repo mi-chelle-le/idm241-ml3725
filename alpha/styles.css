@@ -79,7 +79,6 @@ section {
     grid-gap: 45px;
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
-
 }
 
 .img1 {
@@ -136,8 +135,6 @@ section {
     }
 
 }
-
-
 
 p {
     font-weight: 750;
