@@ -5,16 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michelle Le IDM241 Alpha</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="images">
-        <img
-        alt="Microinteraction Visual"
-        src=""
-        >
+    <div class="header">
+        <h1>IDM241 Alpha</h1>
+        <h2>Microinteraction: Ikea 'Add to Bag' Button - <a href="https://www.ikea.com/us/en/cat/nightstands-20656/" target="_blank">Ikea Website</a></h2>
     </div>
-    <div>
+    <section>
+    <div class="images">
+        <div>
+         <img class="img1"
+        alt="Microinteraction Visual 1"
+        src="assets/ikea_microinteraction1.gif"
+        >   
+        </div>
+        <div>
+            <img class="img2"
+            alt="Microinteraction Visual 2"
+            src="assets/ikea_microinteraction2.gif">
+        <div>
+            <img class="img3"
+            alt="Microinteraction Visual 3"
+            src="assets/ikea_microinteraction3.png">
+        </div>
+    </div>
+    </div>
+</section>
+    <div class="info">
+        <div class="triggers">
+            <div class="headers">
+            <h2>Triggers</h2>
+            </div>
+            <ul>
+                <li>
+                    Hover on/off shopping bag icon
+                </li>
+                <li>
+                    Click on shopping bag icon
+                </li>
+            </ul>
+        </div>
+        <div class="rules">
+            <div class="headers">
+            <h2>Rules</h2>
+            </div>
+            <p>Hover over shopping bag icon</p>
+            <ul>
+                <li>Cursor turns to pointer</li>
+                <li>Button will turn a darker shade of blue</li>
+                <li>Name of the product will become underlined</li>
+            </ul>
+            <p>Click on shopping bag icon</p>
+            <ul>
+                <li>Button turns an even darker shade of blue while mouse click is down</li>
+                <li>Button returns to previous shade of blue once mouse click is released</li>
+                <li>Shopping bag icon is replaced by a circle that bounces while item is being added to bag</li>
+                <li>Circle is then replaced by a check mark that slides up</li>
+                <li>Shopping bag icon in the top right of page increases its number by 1</li>
+                <li>Tab pops up on the top right that says product was added, along with a "Show" and close button</li>
+                <li>After a 1.5s, shopping bag icon reappears</li>
+            </ul>
+        </div>
         
+        <div class="feedback">
+            <div class="headers">
+            <h2>Feedback</h2>
+            </div>
+            <p>Hover over shopping bag icon</p>
+            <ul>
+                <li>Cursor turns to pointer</li>
+                <li>Button will turn a darker shade of blue</li>
+                <li>Name of the product will become underlined</li>
+            </ul>
+            <p>Click on shopping bag icon</p>
+            <ul>
+                <li>Button turns an even darker shade of blue while mouse click is down</li>
+                <li>Button returns to previous shade of blue once mouse click is released</li>
+                <li>Shopping bag icon is replaced by a circle that bounces while item is being added to bag</li>
+                <li>Circle is then replaced by a check mark that slides up</li>
+                <li>Shopping bag icon in the top right of page increases its number by 1</li>
+                <li>Tab pops up on the top right that says product was added, qalong with a "Show" and close button</li>
+                <li>After a 1.5s, shopping bag icon reappears</li>
+        </div>
+        <div class="loopsmodes">
+            <div class="headers">
+            <h2>Loops & Modes</h2>
+            </div>
+            <ul>
+                <li>No loops</li>
+                <li>Modal pops up in the top right indicating that the product has been added to the shopping bag</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
