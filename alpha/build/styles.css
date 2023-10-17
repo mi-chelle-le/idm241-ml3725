@@ -110,7 +110,6 @@ section {
     .info {
         grid-template-columns: repeat(2, 1fr);
     }
-
     /* .images {
         grid-template-columns: repeat(2,1fr);
     }
@@ -186,7 +185,6 @@ ul {
 
 .save-button {
     border-radius: 30px;
-    /* background-color: var(--blue); */
     padding: 9px;
     width: 47px;
     margin: 5px;
@@ -251,10 +249,6 @@ svg {
     font-size: 0.8rem;
     vertical-align: super;
 }
-
-/* .product-button:hover::before {
-    content: attr(data-tooltip);
-} */
 
 .product-button::before, .product-button::after {
     --scale: 0;
