@@ -116,19 +116,19 @@ section {
     }
 
     .info > div {
-        min-height: 92rem;
+        min-height: 105rem;
     }
 }
 
 @media (min-width: 1320px) {
     .info > div {
-        min-height: 85rem;
+        min-height: 97rem;
     }
 }
 
 @media (min-width: 1705px) {
     .info > div {
-        min-height: 75rem;
+        min-height: 90rem;
     }
 }
 
