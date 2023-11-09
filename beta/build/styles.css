@@ -107,7 +107,7 @@ section {
 }
 
 
-@media (min-width: 1080px) {
+/* @media (min-width: 1080px) {
     .info {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -131,7 +131,7 @@ section {
     .info > div {
         min-height: 90rem;
     }
-}
+} */
 
 p {
     font-weight: 750;
