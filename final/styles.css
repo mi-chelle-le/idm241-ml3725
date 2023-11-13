@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --blue: #0058A3;
+    --yellow: #FFD200;
+    --text: #252525;
+
+    --font-serif: "Noto Sans", Verdana, serif;
+    --font-bold: "Noto Sans", Verdana, var(--font-serif);
+
+    font-size: 1.1rem
+}
+
+@media (min-width: 1280px) {
+    :root {
+        font-size: 1.2rem;
+    }
+}   
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: var(--font-serif);
+    color: var(--text);
+    background-color: #fffffe;
+    margin-bottom: 50px;
+}
+
+h1 {
+    color: var(--yellow);
+}
+a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+a:hover {
+    color: var(--yellow);
+    transition: 0.3s;
+}
+
+.headers {
+    background-color: #252525;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-top: -10px;  
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.headers > h2 {
+    text-align: center;
+    padding-right: 20px;
+    color: white;
+}
+
+.header {
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    width: 100%
+}
+
+section {
+    display:flex;
+    justify-content: center;
+}
+
+.images {
+    display: grid;
+    grid-gap: 45px;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    margin-top: 30px;
+}
+
+.img1 {
+    width: 450px;
+}
+
+.info > div {
+    border: 4px solid #252525;
+    border-radius: 15px;
+    padding: 10px 10px; 
+    box-sizing: border-box;
+    width: 100%;
+    min-height: auto;
+}
+
+.info {
+    display: grid;
+    grid-gap: 45px;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    border: 4px solid var(--navy-blue);
+    margin: 0.5rem auto;
+    width: 75%;
+
+}
+
+@media (min-width: 1080px) {
+    /* .info {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+
+    .images {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* .info > div {
+        min-height: 105rem;
+    } */
+}
+
+/* @media (min-width: 1320px) {
+    .info > div {
+        min-height: 97rem;
+    }
+}
+
+@media (min-width: 1705px) {
+    .info > div {
+        min-height: 90rem;
+    }
+} */
+
+p {
+    font-weight: 750;
+    font-size: 1.1rem;
+    color: var(--blue);
+    margin: 10px
+}
+
+.info li {
+    padding: .25rem;
+    margin: .5rem;
+    margin-left: 40px;
+    font-weight: 500;
+}
+
+ul {
+    margin-bottom: 25px;
+}
+
+.images h3 {
+    margin-left: 25px;
+}
