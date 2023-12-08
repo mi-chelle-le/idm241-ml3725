@@ -41,16 +41,11 @@ function fadeInButtons() {
     indicatorParent.classList.toggle('carousel-hover');
 }
 
-// Save button
-
-// document.querySelector(".save-button").addEventListener('click', function() {
-//     this.classList.toggle('heart-active');
-// });
+// Save Button
 
 document.querySelector(".save-button").addEventListener('click', function() {
     var heartIcon = document.getElementById('heart-icon');
 
-    // Toggle the active class
     this.classList.toggle('heart-active');
     if (this.classList.contains('heart-active')){
         this.setAttribute('data-tooltip', 'Unsave');
@@ -59,8 +54,6 @@ document.querySelector(".save-button").addEventListener('click', function() {
         this.setAttribute('data-tooltip', 'Save');
     }
 
-
-    // Add pulsing class and then remove it after animation
     heartIcon.classList.add('pulsing');
     heartIcon.addEventListener('animationend', function() {
         heartIcon.classList.remove('pulsing');
