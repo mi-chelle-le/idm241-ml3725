@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --blue: #0058A3;
+    /* --yellow: #FFD200; */
+    --yellow: #e6a100;
+    --text: #252525;
+
+    --font-serif: "Noto Sans", Verdana, serif;
+    --font-bold: "Noto Sans", Verdana, var(--font-serif);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: var(--font-serif);
+    color: var(--text);
+    background-color: #FFFBF1;
+    font-size: 1.2rem;
+}
+
+.case-study {
+    max-width: 800px;
+    margin: auto;
+}
+
+.title, .case-study-container {
+    margin: 50px;
+}
+
+h1 {
+    color: var(--yellow);
+    font-size: 2.5rem;
+}
+
+h2 { 
+    color: var(--blue);
+    margin: 10px 0;
+    font-size: 1.8rem;
+}
+
+h3 {
+    color: var(--yellow);
+    margin: 15px 0 10px 0;
+    font-size: 1.5rem;
+
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+.additions {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.case-study img {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    background-image: url(imgs/casestudy_header.png);
+    padding: 100px;
+}
+
+span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: var(--blue); 
+    color: #fff; 
+    text-align: center;
+    padding: 40px; 
+    bottom: 0;
+    width: 100%;
+    margin-top: 75px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+button {
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: var(--blue);
+    font-family: var(--font-serif);
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    margin: 8px 0px 20px 0px;
+}
+
+button:hover {
+    background-color: #003563;
+    transform: scale(1.05);
+}
+
+.two-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+ul {
+    margin-left: 50px;
+}
+
+@media (max-width: 640px) {
+    .two-grid {
+        grid-template-columns: 1fr;
+    }
+} 

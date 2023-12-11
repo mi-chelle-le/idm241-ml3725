@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle Le IDM241 Case Study</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav></nav>
+    <div class="case-study">
+    <div class="title">
+        <h1>Ikea Product Card: Coding microinteractions </h1>
+    </div>
+        <div class="case-study-container">
+        <h2>Overview</h2>
+        <p>Microinteractions, although small, are crucial in many aspects of UX including providing feedback, enhancing user experience, and increasing usability. In this project, I took an existing set of microinteractions and improved on them using HTML, CSS, and Javascript. I decided to take the Ikea product card and innovate upon what was already existing. </p>
+        </div>
+        <div class="case-study-container">
+            <h2>Context &amp; Challenge</h2>
+            <h3>Background</h3>
+            <p>Ikea is a furniture and home goods company that is best known for its ready-to-assemble furniture and modern designs. Its online commerce website features detailed product information and allows people to shop from the comfort of their own home. Ikea has had global success with its UX in-store by providing a unique store layout where people can browse showrooms and interact with elements. Their DIY approach allows customers to pickup furniture from the warehouse and assemble it on their own. Due to this success, I expected this immersive experience to extend to the website as well, but I found some of the microinteractions rather lackluster.</p>
+            <h3>Timeline</h3>
+            <p>Over the course of 11 weeks, I spent time building upon previous microinteractions, reiterating, and polishing my code to create seamless, interactive elements. Before each iteration was implemented with code, a description of the microinteraction was written, going into detail with the triggers, rules, feedbacks, loops, and modes. These iterations were split into 3 phases: Alpha, Beta, and Final.</p>
+            <h3>The Problem</h3>
+            <p>The task at hand was to take an existing microinteraction and improve on it, while also describing its triggers, rules, feedback, loops, and modes in full detail. All of these components were to exist on a responsive page with a clear, readable layout. I chose Ikea’s product card because I felt there were various components I could iterate upon such as the Add to Bag button, save button, and image div.</p>
+            <h3>Goals &amp; Objectives</h3>
+            <p>My main goal with coding this set of microinteractions was to create clear feedback for the user whenever they hovered or clicked on elements. When the user hovers over the Add to Bag button or save button, they should be able to see feedback that indicates that it’s clickable, and also know its function. As for the product image, I brainstormed an image carousel that would allow users to click through multiple product images. Microinteractions aside, I also had an objective of improving my front-end development skills by digging deeper into HTML, CSS and Javascript with this project. </p>
+        </div>
+        <div class="case-study-container">
+            <h2>Process &amp; Insight</h2>
+            <h3>Alpha</h3>
+            <p>For the Alpha stage, I focused on a singular, simple microinteraction. I decided to tackle the Add to Bag button first by creating a simple hover on interaction. I definitely wanted the button to have clear indication that a user is hovering over it, so I thought to scale it and have a slight color change. Additionally to provide more feedback, I brainstormed ways that users could learn the function of the button upon hovering it. I decided to implement a tooltip, which is a common UI element used in development to provide extra information to the user. </p>
+            <p class="additions">Microinteraction additions:</p>
+            <ul>
+                <li>Hovering over the shopping bag scales it larger and turns the button a darker shade of blue. The name of the product is also underlined.</li>
+                <li>Gray tooltip that says “Add to Bag” pops out from above the shopping bag icon.</li>
+            </ul>
+            <div class="two-grid">
+                <img src="imgs/ikea_microinteractions1.png">
+                <img src="imgs/ikea_microinteractions2.png">
+            </div>
+            <h3>Beta</h3>
+            <p>For the Beta stage, I added another microinteraction to the product card. This time, I decided to implement a carousel within the product image so that users could click through images without having to click into the product information page. To present users with valuable information, I wanted to include a carousel indicator at the bottom of the div so that users can know how many images are in the carousel, and which image they are currently viewing. </p>
+            <p class="additions">Microinteraction additions:</p>
+            <ul>
+                <li>Hovering over image container fades a transparent black overlay, left/right arrows, and a carousel indicator with 4 dots at the bottom of the div.</li>
+                <li>Clicking on the right arrows slides the current image to the left while the next image slides in from the right.</li>
+                <li>Clicking on the left arrow slides the current image to the right while the previous image slides in from the left.</li>
+                <li>The carousel indicator fills the circle respective to the image being currently viewed.</li>
+            </ul>
+            <div class="two-grid">
+            <img src="imgs/ikea_microinteractions5.png">
+            <img src="imgs/ikea_microinteractions6.png">
+            </div>
+            <h3>Final</h3>
+            <p>For the Final stage, I improved my previous iterations based on feedback I received in class. I added functionality to the save button for both hovering on and clicking it. To stay consistent, I also added the tooltip above the button to give users information on the purpose of the heart icon. In Ikea’s original microinteraction, the heart icon simply switches from an outline to a filled heart with no animation. To add more visual feedback, I made it a goal to have the heart animate in a pulse-like way when clicked on. </p>
+            <p class="additions">Microinteraction additions:</p>
+            <ul>
+                <li>Hovering on the heart icon scales it large and a gray tooltip that says “Save” or “Unsave” pops out from above it. When the heart icon is inactive, the tooltip says “Save” and when the heart icon is active, the tooltip says “Unsave.”</li>
+                <li>Clicking on the heart icon will fade it to a red color and pulse once before returning to its original size. The tooltip text will update based on whether or not the heart icon is inactive or active. </li>
+                <li>The carousel now loops the images when the user gets to either end of the carousel and clicks the arrows.</li>
+            </ul>
+            <div class="two-grid">
+                <img src="imgs/ikea_microinteractions8.png">
+                <img src="imgs/ikea_microinteractions10.png">
+            </div>
+        </div>
+        <div class="case-study-container">
+            <h2>The Solution</h2>
+            <a href="https://www.michellele.io/idm241/final/build" target="_blank"><button>View final microinteractions and description</button></a>
+            <p>After several iterations and lots of debugging, I ended up with a set of microinteractions that I can say has met a lot of my initial goals. I wanted to provide as much clear feedback and information to the user as possible when interacting with elements of the product card. Additionally, coding each element so that they’d all have an animation to them enhances user experience helps guide their attention to the task at hand. In the end, I was able to create a functional image carousel to display the product images in an interactive way. The heart icon is also fully functional with hover and active states equipped with animations. The shopping bag icon only has a hover state for now.  </p>
+        </div>
+        <div class="case-study-container">
+            <h2>The Results</h2>
+            <p>Overall, the project was a success and I was able to dive deeper in Javascript and CSS properties that I never had before. Coding these microinteractions pushed me to seek out various methods of coding specific features and functions. I learned a lot on how to take and bend code to my will to integrate into my own code. By going into depth with the triggers, rules, feedback, loops, and modes, I was able to realize how many small components make up a simple microinteraction. What seems to be a miniscule feature of interactions turns out to have layers of nuances that help enhance user experiences. If given more time, I would have definitely iterated the shopping bag icon further to be functional on click, and maybe have a modal pop up with further information. </p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2023 Michelle Le</p>
+    </footer>
+</body>
+</html>
